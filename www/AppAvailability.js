@@ -41,7 +41,17 @@ var appAvailability = {
             "checkAvailability",
             [urlScheme]
         );
-    }
+    },
+
+    openUrl: function(url, callback) {
+        cordova.exec(
+            function(success) { callback(success); },
+            function(error) { callback(error); },
+            "AppAvailability",
+            "openUrl",
+            [url]
+        );
+    },
     
 };
 

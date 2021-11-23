@@ -4,4 +4,6 @@
 
 - (void)checkAvailability:(CDVInvokedUrlCommand*)command;
 
+- (void)openUrl:(CDVInvokedUrlCommand*)command;
+
 @end
